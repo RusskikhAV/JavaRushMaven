@@ -1,0 +1,22 @@
+package JavaSyntaxZero.Level19;
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+/*
+Знакомство со ссылками на методы
+*/
+
+public class JSzeroLv19lc2task3 {
+    public static void main(String[] args) {
+        var strings = new ArrayList<String>();
+        Collections.addAll(strings, "Hello", "Amigo", "JavaRush", "CodeGym");
+
+        print(strings);
+    }
+
+    public static void print(ArrayList<String> strings) {
+        strings.forEach(System.out::println);
+    }
+}
